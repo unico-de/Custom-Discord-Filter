@@ -1,0 +1,14 @@
+// Download this if you already know how to set it up/understand (for quick access)
+
+let Discord = require("discord.js")
+let client = new Discord.Client()
+
+client.on("message", message => {
+if(message.content === "FilteredWord") {
+  message.delete()
+  message.channel.send("WarnMessage")
+    client.user.setActivity('ActivityName', { type: "PLAYING"})
+}
+})
+
+client.login("BotToken")
