@@ -1,0 +1,18 @@
+// Optionally add a help command.
+
+client.on("message", message => {
+if(message.content === "help") {
+  message.delete()
+  message.channel.send("Help: HelpText")
+  message.channel.send("Help: HelpText 2")
+  message.channel.send("Help: HelpText 3")
+  message.channel.send("Help: HelpText 4")
+  message.channel.send("Help: HelpText 5")
+  message.channel.send("Help: HelpText 6")
+  message.channel.send("Help: HelpText 7")
+  message.channel.send("Help: HelpText 8")
+  message.channel.send("Help: HelpText 9")
+  message.channel.send("Help: HelpText 10")
+    client.user.setActivity('ActivityName', { type: "PLAYING"})
+}
+})
